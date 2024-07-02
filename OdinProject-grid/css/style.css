@@ -1,0 +1,238 @@
+
+body {
+  background: #e6efff;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+#home-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: minmax(150px, 25%) auto;
+}
+#navbar {
+  /*width: fit-content;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background: #3882F6;
+  color: white;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+#navbar > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-left: 20px;
+}
+#navbar #profile {
+  margin-bottom: 4rem;
+}
+
+
+#header {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px;
+  padding-top: 10px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  box-shadow: 0px 3px 10px #888;
+}
+#header > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header img {
+  width: 35px;
+  height: 35px;
+  border-radius: 40px;
+}
+#search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding-left: 30px;
+}
+#search > div {
+  display: inline-block;
+  width: 500px;
+  height: 28px;
+  background: #f5f5f5;
+  border-radius: 20px;
+}
+#search + div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding-right: 30px;
+}
+#header > div:nth-child(2) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#hello {
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding-left: 30px;
+}
+#hello img {
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+}
+#hello > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  justify-content: center;
+}
+#hello p {
+  margin: 0;
+}
+#actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  padding-right: 30px;
+}
+#actions > div {
+  background: #3882F6;
+  border-radius: 40px;
+  padding: 10px 25px;
+}
+#actions p {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+}
+
+#dashboard {
+  background: inherit;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 70% auto;
+  grid-template-rows: auto auto;
+  padding: 50px 30px;
+  gap: 10px 30px;
+}
+#projects-wrapper {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  /*padding: 10px 30px;*/
+}
+#projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px 30px;
+  box-shadow: -2px 5px 8px #888;
+}
+.project > div {
+  margin-left: auto;
+  padding-right: 10px;
+}
+
+#announcements-wrapper {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+#announcements-wrapper > div {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 20px;
+  background: #fff;
+  padding: 0px 20px;
+  box-shadow: 2px 3px 8px #888;
+}
+.announcement:nth-child(2){
+  border-bottom: #ccc solid 0.5px;
+  border-top: #ccc solid 0.5px;
+}
+.announcement {
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.announcement > p{
+  font-size: 12px;
+}
+
+#trending-wrapper {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+#trends {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  background: #fff;
+  padding: 20px 30px;
+  box-shadow: 2px 3px 8px #888;
+  gap: 10px;
+}
+.trend {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-grow: 1;
+}
+.trend > div > p{
+  font-size: 16px;
+  color: #666;
+}
